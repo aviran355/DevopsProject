@@ -1,6 +1,6 @@
 from flask import Flask, request
 
-app = Flask(_name_)
+app = Flask(__name__)
 # Initialize counter
 post_counter = 0
 
@@ -13,5 +13,5 @@ def count_posts():
     else:
         return f"POST request count: {post_counter}"
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     app.run(debug=True, host='0.0.0.0')
