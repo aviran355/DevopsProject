@@ -1,7 +1,7 @@
 from flask import Flask, request
 
 app = Flask(__name__)
-# Initialize counter
+
 post_counter = 0
 
 @app.route('/', methods=['GET', 'POST'])
